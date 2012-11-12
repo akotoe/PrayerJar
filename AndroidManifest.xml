@@ -20,6 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HowTo"
+            android:label="@string/title_activity_how_to" >
+            
+        </activity>
+        <activity
+            android:name=".OptionsActivity"
+            android:label="@string/options" >
+            
+        </activity>
+        <activity
+            android:name=".MainScreenActivity"
+            android:label="@string/title_activity_main_screen" >
+           
+        </activity>
+        
     </application>
 
 </manifest>
