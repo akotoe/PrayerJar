@@ -22,7 +22,6 @@ public class MainScreenActivity extends Activity {
             public void onClick(View v) {
             	finish();
                 System.exit(0);
-
             }
         });
     }

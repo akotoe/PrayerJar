@@ -1,36 +1,67 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center_vertical"
-    android:minHeight="10dp"
-    android:orientation="vertical" >
-
-    <ImageView
-       
-       	android:contentDescription="@string/logo"
-        android:id="@+id/viewLogo"
-        android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_launcher" />
-    
+        android:divider="#b5b5b5"
+        android:dividerHeight="0.5dp"
+        android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_below="@+id/headerDividerBottom"
+        android:listSelector="@drawable/list_selector" />
 
-    <TextView
-        android:id="@+id/viewHow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="15dp"
-        android:text="@string/how_it_works" />
+	<RelativeLayout
+	    android:id="@+id/top_control_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/straight_edges" >
 
-    <TextView
-        android:id="@+id/viewStart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/start_now"
-        android:layout_gravity="center" />
-    
-</LinearLayout>
+	    	<View
+	    	    android:id="@+id/configBarBlack"
+	    	    android:layout_width="2dp"
+	    	    android:layout_height="fill_parent"
+	    	    android:layout_alignParentRight="true"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginRight="44dp"
+	    	    android:background="@drawable/engraved" />
+
+	    	<TextView
+	    	    android:id="@+id/appName"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_centerVertical="true"
+	    	    android:textSize="25dip"
+	    	    android:textStyle="bold"
+	    	    android:layout_marginLeft="10dp"
+	    	    android:text="@string/app_name" />
+
+	</RelativeLayout>
+	<View
+	    android:id="@+id/headerDividerBottom"
+	    android:layout_width="fill_parent"
+	    android:background="#414141"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/top_control_view">
+	    
+	</View>
+	<View
+	    android:id="@+id/headerDividerTop"
+	     android:layout_alignParentRight="true"
+	    android:layout_width="fill_parent"
+	    android:background="#1760A0"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true"
+	    >
+	    
+	</View>
+
+</RelativeLayout>
 

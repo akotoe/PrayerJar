@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">PrayerJar</string>
+    <string name="app_name">Prayer Jar</string>
     <string name="hello_world">Hello World!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Prayer Jar</string>
@@ -46,5 +46,12 @@
     <string name="title_activity_sample">Sample</string>
     
      <color name="silver">#303030</color>
+     <string name="image">image</string>
+     <string-array name="default_sorts">
+         <item>A</item>
+         <item>B</item>
+         <item>C</item>
+         
+     </string-array>
 
 </resources>
