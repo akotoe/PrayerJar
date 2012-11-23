@@ -1,11 +1,14 @@
 package com.prayerjar;
 
 import android.app.Activity;
+import android.content.Intent;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity{
 	static boolean isKill = false;
@@ -40,6 +43,25 @@ public class MainActivity extends Activity{
 	    return true;
 	}
 	
+	public boolean onOptionsItemSelected(MenuItem item){
+		
+		switch (item.getItemId()){
+			case R.id.add:
+				startActivity(new Intent(this, AddActivity.class));
+				return true;
+			
+			case 3:
+				return true;
+			
+			case R.id.settings:	
+				startActivity(new Intent(this, SettingsActivity.class));
+				return true;
+			}
+		
+			return false;
+		
+		}
+
 	@Override
 	protected void onResume() {
 		super.onResume();

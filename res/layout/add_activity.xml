@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<View
+	    android:id="@+id/headerDividerTop"
+	    android:layout_alignParentRight="true"
+	    android:layout_width="fill_parent"
+	    android:background="#1760A0"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true">	    
+	</View>
+	
+		
+	
+
+	<RelativeLayout
+	    android:id="@+id/top_control_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/straight_edges" >
+
+	    	<View
+	    	    android:id="@+id/configBarBlack"
+	    	    android:layout_width="2dp"
+	    	    android:layout_height="fill_parent"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginLeft="44dp"
+	    	    android:background="@drawable/engraved" />
+
+	    	<TextView
+	    	    android:id="@+id/appName"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_centerVertical="true"
+	    	    android:layout_marginLeft="18dp"
+	    	    android:layout_toRightOf="@+id/configBarBlack"
+	    	    android:text="@string/app_new_item"
+	    	    android:textSize="25dip"
+	    	    android:textStyle="bold" />
+
+	</RelativeLayout>
+	
+    <View
+	    android:id="@+id/headerDividerBottom"
+	    android:layout_width="fill_parent"
+	    android:background="#414141"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/top_control_view"/>
+	
+	<ScrollView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+	  
+	    android:background="@drawable/list_selector"
+	    android:layout_below="@+id/headerDividerBottom">
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:id="@+id/tag"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_marginBottom="12dp"
+	            android:layout_marginTop="12dp"
+	            android:orientation="horizontal" >
+
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="7dp"
+	                android:text="@string/tag"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="#969696" />
+
+	            <MultiAutoCompleteTextView
+	                android:id="@+id/multiAutoCompleteTextView1"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_marginLeft="5dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/edit_text_selector"
+	                android:ems="10"
+	                android:hint="Search" >
+
+	                <requestFocus />
+	            </MultiAutoCompleteTextView>
+	        </LinearLayout>
+
+	        <View
+	            android:id="@+id/bar"
+	            android:layout_width="fill_parent"
+	            android:layout_height="0.5dp"
+	            android:background="#b5b5b5" >
+	        </View>
+
+	        <LinearLayout
+	            android:id="@+id/linearLayoutPrayer"
+	             android:layout_below="@+id/bar"
+	            android:layout_width="fill_parent"
+	            android:layout_height="match_parent"
+	            android:orientation="horizontal" >
+
+	            <EditText
+	                android:id="@+id/editText1"
+	                android:layout_width="0dp"
+	                android:layout_height="fill_parent"
+	                android:layout_marginTop="10dp"
+	                android:paddingBottom="50dp"
+	                android:layout_weight="1"
+	                android:minHeight="250dp"
+	                android:ems="10"
+	                android:gravity="top"
+	                android:hint="Pray"
+	                android:inputType="textMultiLine"
+	                 />
+
+	        </LinearLayout>
+
+	    </LinearLayout>
+	    	
+	    </ScrollView>
+		    
+	<LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/list"
+	            android:layout_alignParentBottom="true"
+	            android:layout_marginTop="5dp"
+	            android:gravity="top"
+	            android:orientation="horizontal" >
+
+	            <Button
+	                android:id="@+id/button1"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Amen" />
+
+	            <Button
+	                android:id="@+id/button2"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="Clear" />
+	        </LinearLayout>
+
+
+	
+	
+
+</RelativeLayout>
+

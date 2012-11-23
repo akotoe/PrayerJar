@@ -9,7 +9,7 @@ package com.prayerjar;
 
 public final class R {
     public static final class array {
-        public static final int default_sorts=0x7f060000;
+        public static final int tags=0x7f060000;
     }
     public static final class attr {
     }
@@ -18,21 +18,23 @@ public final class R {
         public static final int silver=0x7f050001;
     }
     public static final class drawable {
-        public static final int engraved=0x7f020000;
-        public static final int gradient_bg=0x7f020001;
-        public static final int gradient_bg_hover=0x7f020002;
-        public static final int ic_action_search=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_next=0x7f020005;
-        public static final int image_bg=0x7f020006;
-        public static final int list_selector=0x7f020007;
-        public static final int rounded_edges=0x7f020008;
-        public static final int straight_edges=0x7f020009;
+        public static final int edit_text_selector=0x7f020000;
+        public static final int engraved=0x7f020001;
+        public static final int gradient_bg=0x7f020002;
+        public static final int gradient_bg_hover=0x7f020003;
+        public static final int ic_action_search=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int ic_next=0x7f020006;
+        public static final int image_bg=0x7f020007;
+        public static final int list_selector=0x7f020008;
+        public static final int rounded_edges=0x7f020009;
+        public static final int straight_edges=0x7f02000a;
     }
     public static final class id {
-        public static final int add=0x7f090026;
+        public static final int add=0x7f09002a;
         public static final int appName=0x7f090008;
-        public static final int artist=0x7f090020;
+        public static final int artist=0x7f090024;
+        public static final int bar=0x7f09001f;
         public static final int btnClose=0x7f090015;
         public static final int btnNext=0x7f09001c;
         public static final int btnTime=0x7f090017;
@@ -42,34 +44,37 @@ public final class R {
         public static final int button5=0x7f090014;
         public static final int checkBox1=0x7f090016;
         public static final int configBarBlack=0x7f090007;
-        public static final int duration=0x7f090021;
+        public static final int duration=0x7f090025;
         public static final int editText1=0x7f09000c;
         public static final int editText2=0x7f090011;
         public static final int headerDividerBottom=0x7f090005;
         public static final int headerDividerTop=0x7f090009;
         public static final int lblTime=0x7f090019;
         public static final int linearLayout1=0x7f090000;
+        public static final int linearLayoutPrayer=0x7f090020;
         public static final int list=0x7f090004;
-        public static final int list_color_tag=0x7f09001e;
-        public static final int logo_sreen=0x7f090022;
-        public static final int menu_settings=0x7f090025;
-        public static final int progressBar1=0x7f090023;
+        public static final int list_color_tag=0x7f090022;
+        public static final int logo_sreen=0x7f090026;
+        public static final int menu_settings=0x7f090029;
+        public static final int multiAutoCompleteTextView1=0x7f09001e;
+        public static final int progressBar1=0x7f090027;
         public static final int radioButton2=0x7f09001a;
-        public static final int search=0x7f090027;
-        public static final int settings=0x7f090028;
+        public static final int search=0x7f09002b;
+        public static final int settings=0x7f09002c;
+        public static final int tag=0x7f09001d;
         public static final int textView1=0x7f09000a;
         public static final int textView10=0x7f09001b;
         public static final int textView2=0x7f09000b;
         public static final int textView3=0x7f09000d;
         public static final int textView5=0x7f090012;
         public static final int textView7=0x7f090010;
-        public static final int thumbnail=0x7f09001d;
-        public static final int title=0x7f09001f;
+        public static final int thumbnail=0x7f090021;
+        public static final int title=0x7f090023;
         public static final int top_control_view=0x7f090006;
         public static final int viewAlert=0x7f090018;
         public static final int viewBack=0x7f090003;
         public static final int viewSlide=0x7f090002;
-        public static final int viewTop=0x7f090024;
+        public static final int viewTop=0x7f090028;
         public static final int viewVideo=0x7f090001;
     }
     public static final class layout {
@@ -77,9 +82,11 @@ public final class R {
         public static final int activity_main=0x7f030001;
         public static final int activity_main_screen=0x7f030002;
         public static final int activity_options=0x7f030003;
-        public static final int list_row=0x7f030004;
-        public static final int logo_screen_activity=0x7f030005;
-        public static final int view_top=0x7f030006;
+        public static final int activity_settings=0x7f030004;
+        public static final int add_activity=0x7f030005;
+        public static final int list_row=0x7f030006;
+        public static final int logo_screen_activity=0x7f030007;
+        public static final int view_top=0x7f030008;
     }
     public static final class menu {
         public static final int activity_how_to=0x7f080000;
@@ -90,47 +97,49 @@ public final class R {
         public static final int jar_menu=0x7f080005;
     }
     public static final class string {
-        public static final int add=0x7f04001b;
-        public static final int alert=0x7f04000c;
-        public static final int alert_time=0x7f040010;
-        public static final int alert_tone=0x7f04000f;
+        public static final int add=0x7f04001d;
+        public static final int alert=0x7f04000e;
+        public static final int alert_time=0x7f040012;
+        public static final int alert_tone=0x7f040011;
         public static final int app_name=0x7f040000;
-        public static final int back=0x7f040009;
-        public static final int close=0x7f040019;
-        public static final int countdown_timer=0x7f040025;
-        public static final int customize_tags=0x7f040014;
-        public static final int display_countdown=0x7f040012;
-        public static final int display_shortcut_tags=0x7f040013;
-        public static final int dummy_time=0x7f040011;
-        public static final int exit=0x7f040017;
-        public static final int family=0x7f040020;
-        public static final int hello_world=0x7f040001;
-        public static final int how_it_works=0x7f040005;
-        public static final int i_am_thankful=0x7f040024;
-        public static final int i_pray=0x7f040021;
-        public static final int image=0x7f040028;
-        public static final int logo=0x7f040004;
-        public static final int menu_settings=0x7f040002;
-        public static final int modify=0x7f04001c;
-        public static final int next=0x7f040018;
-        public static final int off=0x7f04000e;
-        public static final int ok=0x7f04001a;
-        public static final int on=0x7f04000d;
-        public static final int options=0x7f04000b;
-        public static final int save=0x7f040016;
-        public static final int save_exit=0x7f040015;
-        public static final int school=0x7f04001e;
-        public static final int school_work_family=0x7f040023;
-        public static final int slide_show=0x7f040008;
-        public static final int start_now=0x7f040006;
-        public static final int tags=0x7f04001d;
-        public static final int tags_=0x7f040022;
-        public static final int title_activity_how_to=0x7f04000a;
-        public static final int title_activity_main=0x7f040003;
-        public static final int title_activity_main_screen=0x7f040026;
-        public static final int title_activity_sample=0x7f040027;
-        public static final int video_tutorials=0x7f040007;
-        public static final int work=0x7f04001f;
+        public static final int app_new_item=0x7f040002;
+        public static final int back=0x7f04000b;
+        public static final int close=0x7f04001b;
+        public static final int countdown_timer=0x7f040027;
+        public static final int customize_tags=0x7f040016;
+        public static final int display_countdown=0x7f040014;
+        public static final int display_shortcut_tags=0x7f040015;
+        public static final int dummy_time=0x7f040013;
+        public static final int exit=0x7f040019;
+        public static final int family=0x7f040022;
+        public static final int hello_world=0x7f040003;
+        public static final int how_it_works=0x7f040007;
+        public static final int i_am_thankful=0x7f040026;
+        public static final int i_pray=0x7f040023;
+        public static final int image=0x7f04002a;
+        public static final int logo=0x7f040006;
+        public static final int menu_settings=0x7f040004;
+        public static final int modify=0x7f04001e;
+        public static final int next=0x7f04001a;
+        public static final int off=0x7f040010;
+        public static final int ok=0x7f04001c;
+        public static final int on=0x7f04000f;
+        public static final int options=0x7f04000d;
+        public static final int save=0x7f040018;
+        public static final int save_exit=0x7f040017;
+        public static final int school=0x7f040020;
+        public static final int school_work_family=0x7f040025;
+        public static final int slide_show=0x7f04000a;
+        public static final int start_now=0x7f040008;
+        public static final int tag=0x7f040001;
+        public static final int tags=0x7f04001f;
+        public static final int tags_=0x7f040024;
+        public static final int title_activity_how_to=0x7f04000c;
+        public static final int title_activity_main=0x7f040005;
+        public static final int title_activity_main_screen=0x7f040028;
+        public static final int title_activity_sample=0x7f040029;
+        public static final int video_tutorials=0x7f040009;
+        public static final int work=0x7f040021;
     }
     public static final class style {
         public static final int AppTheme=0x7f070000;
