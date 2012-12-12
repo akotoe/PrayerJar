@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Category Title">
+       
+                <CheckBoxPreference
+                        android:title="Receive alerts"
+                        android:defaultValue="false"
+                        android:summary="This preference can be true or false"
+                        android:key="checkboxPref"
+                        />
+                
+          
+                <ListPreference
+                        android:title="Alert tone"
+                        android:summary="This preference allows to select an item in a array"
+                        android:key="listPref"
+                        android:defaultValue="digiGreen"
+                        android:entries="@array/tags"
+                        android:entryValues="@array/tags" />
+                  <ListPreference
+                        android:title="Alert tone"
+                        android:summary="This preference allows to select an item in a array"
+                        android:key="listPref2"
+                        android:defaultValue="digiGreen"
+                        android:entries="@array/tags"
+                        android:entryValues="@array/tags" />
+        
+</PreferenceScreen>

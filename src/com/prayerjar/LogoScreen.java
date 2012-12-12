@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 //import android.widget.Toast;
+import android.widget.Toast;
 
 
 public class LogoScreen extends Activity{
@@ -18,7 +19,7 @@ public class LogoScreen extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.logo_screen_activity);
 		timer.start();
-//		Toast.makeText(getApplicationContext(), "Create Screen", Toast.LENGTH_SHORT).show();
+	 //Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
 			
 	}
 
@@ -34,7 +35,7 @@ public class LogoScreen extends Activity{
 		
 	}	
 	private void nextActivity(){
-		startActivity(new Intent(LogoScreen.this, MainActivity.class));
+		startActivity(new Intent(LogoScreen.this, Login.class));
 		this.finish();		
 	}
 	private class Timer extends CountDownTimer{	

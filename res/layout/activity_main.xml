@@ -62,6 +62,36 @@
 	    >
 	    
 	</View>
+	
+	<RelativeLayout
+	    android:id="@+id/bottom_control_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/straight_edges" >
+
+	    	<View
+	    	    android:id="@+id/configBarBlack2"
+	    	    android:layout_width="2dp"
+	    	    android:layout_height="fill_parent"
+	    	    android:layout_alignParentTop="true"
+	    	    android:layout_marginLeft="25dp"
+	    	    android:layout_toRightOf="@+id/vwCompose"
+	    	    android:background="@drawable/engraved" />
+
+	    	<TextView
+	    	    android:id="@+id/vwCompose"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_alignParentLeft="true"
+	    	    android:layout_centerVertical="true"
+	    	    android:layout_marginLeft="28dp"
+	    	    android:text="Compose"
+	    	    android:textSize="17dp"
+	    	    android:textStyle="normal" />
+
+	</RelativeLayout>
 
 </RelativeLayout>
 

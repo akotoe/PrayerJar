@@ -1,7 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.prayerjar"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0"
+    >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -10,9 +12,9 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-         android:theme="@android:style/Theme.NoTitleBar">
+        android:theme="@android:style/Theme.NoTitleBar" >
         <activity
-            android:name=".LogoScreen"
+            android:name="com.prayerjar.LogoScreen"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,27 +23,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.prayerjar.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
         <activity
-            android:name=".HowTo"
+            android:name="com.prayerjar.HowTo"
             android:label="@string/title_activity_how_to" >
-            
         </activity>
         <activity
-            android:name=".SettingsActivity"
-            android:label="@string/options" >
-            
+            android:name="com.prayerjar.SettingsActivity"
+            android:label="@string/options"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
         </activity>
         <activity
-            android:name=".MainScreenActivity"
+            android:name="com.prayerjar.MainScreenActivity"
             android:label="@string/title_activity_main_screen" >
-           
         </activity>
-        <activity android:name="AddActivity"></activity>
-       
-        
+        <activity android:name="com.prayerjar.AddActivity" >
+        </activity>
+        <activity
+            android:name="com.prayerjar.PrayerActivity"
+            android:label="@string/title_activity_prayer" >
+        </activity>
+         <activity
+            android:name="com.prayerjar.Login"
+            android:label="@string/title_activity_prayer" >
+        </activity>
     </application>
 
 </manifest>
