@@ -61,6 +61,14 @@ public class SQLiteAdapter {
  public void delete_byRow(String date){
 	 sqLiteDatabase.delete(MYDATABASE_TABLE, DATE+"='"+date+"'", null);
 }
+ 
+ public void updateValue(String key, String value, String position){
+	 
+	ContentValues contentValues = new ContentValues();
+	contentValues.put(key, value);
+	sqLiteDatabase.update(MYDATABASE_TABLE, contentValues, DATE+"='"+position+"'", null);
+	 
+ }
 
  
  public Cursor queueAll(){

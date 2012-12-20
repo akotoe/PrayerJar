@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_control_view"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/straight_edges" >
+
+        <View
+            android:id="@+id/configBarBlack"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="44dp"
+            android:background="@drawable/engraved" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_name"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/headerDividerBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_control_view"
+        android:background="#414141" >
+    </View>
+
+    <View
+        android:id="@+id/headerDividerTop"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#1760A0" >
+    </View>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_control_view"
+        android:layout_below="@+id/headerDividerBottom"
+        android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prayer Requests"
+             android:textColor="#414141" 
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/prayer"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Type prayer here"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="250dp"
+            android:paddingBottom="50dp">
+             <requestFocus /></EditText>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnRequestSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/save" />
+        
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btnThanksSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answered Prayers"
+             android:textColor="#414141" 
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/thanks"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Type prayer here"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minHeight="250dp"
+            android:paddingBottom="50dp" >
+
+           
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/save" />
+
+            
+        </RelativeLayout>
+          <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="325 days left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#414141" />
+
+            
+        </RelativeLayout>
+       
+        
+    </LinearLayout>
+ </ScrollView>
+    <RelativeLayout
+        android:id="@+id/bottom_control_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/straight_edges" >
+
+        <TextView
+            android:id="@+id/vwCompose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="Settings"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/configBarBlack2"
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/engraved" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/vwCompose"
+            android:layout_alignBottom="@+id/vwCompose"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="23dp"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/textView1"
+            android:text="Jar"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

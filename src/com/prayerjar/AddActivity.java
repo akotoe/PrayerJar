@@ -45,24 +45,14 @@ public class AddActivity extends Activity{
 				if(txtPrayer.length() >=1){
 					
 			        mySQLiteAdapter.openToWrite();
-			        
-//			        
-//			        Button btnAnswer = (Button)findViewById(R.id.btnAnswered);
-//			        btnAnswer.setOnClickListener(new Button.OnClickListener(){
-//
-//						public void onClick(View v) {
-//							// TODO Auto-generated method stub
-//							
-//							
-//						}
-//			        	
-//			        });
-			        
-			        //mySQLiteAdapter.deleteAll();
-			        mySQLiteAdapter.insert(txtPrayer.getText().toString(),  new Date().toString(),"Yes" );
+	        
+			      
+			        mySQLiteAdapter.insert(txtPrayer.getText().toString(),  new Date().toString(),"Prayed" );
 			       
-			        Log.i("Come", "On");
+			       
 			        mySQLiteAdapter.close();
+			        
+			        Toast.makeText(getApplicationContext(), "Prayer added", Toast.LENGTH_LONG).show();
 
 					startActivity(new Intent(getApplicationContext(), MainActivity.class));
 					

@@ -38,8 +38,11 @@ public class PrayerActivity extends Activity {
 		btnAnswered.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
             	startActivity(new Intent(PrayerActivity.this, MainActivity.class));
-            	//Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG).show();
-            
+            	mySQLiteAdapter.openToWrite();
+            	mySQLiteAdapter.updateValue("Prayed", "answered", getIntent().getExtras().getString("date"));
+            	
+            	Toast.makeText(getApplicationContext(), "Prayer marked as answered", Toast.LENGTH_LONG).show();
+            	mySQLiteAdapter.close();
 			
             }
         });

@@ -35,7 +35,7 @@ public class LogoScreen extends Activity{
 		
 	}	
 	private void nextActivity(){
-		startActivity(new Intent(LogoScreen.this, Login.class));
+		startActivity(new Intent(LogoScreen.this, MainActivity.class));
 		this.finish();		
 	}
 	private class Timer extends CountDownTimer{	

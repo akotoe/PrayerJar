@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/rounded_edges"
+    tools:context=".StartScreen" >
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/vwStartNow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo_placeholder" />
+
+    <TextView
+        android:id="@+id/vwStartNow"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/quickContactBadge1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/rounded_edges"
+        android:gravity="center"
+        android:text="@string/start_now"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

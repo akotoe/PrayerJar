@@ -47,8 +47,8 @@ public class ContentListAdapter extends ArrayAdapter<PrayerItem> {
 	        }
 	        
 	        date.setText(values.get(position).date);
-	       // duration.setText(values.get(position).getDate());
-//	        thumb_image.setImageResource(R.drawable.ic_launcher);
+	        answered.setText(values.get(position).answered);
+	      
 	        
 	        
 	        return rowView;

@@ -10,7 +10,7 @@
     <string name="title_activity_main">Prayer Jar</string>
     <string name="logo">Logo</string>
     <string name="how_it_works">How it works?</string>
-    <string name="start_now">Start now!</string>
+    <string name="start_now">Start now</string>
     <string name="video_tutorials">Video Tutorials</string>
     <string name="slide_show">Slide Show</string>
     <string name="back">Back</string>
@@ -38,12 +38,20 @@
     <string name="work">Work</string>
     <string name="family">Family</string>
     <string name="i_pray">I pray:</string>
-    
     <string name="help">Help</string>
     <string name="tags:">Tags:</string>
     <string name="school_work_family">School Work Family</string>
     <string name="i_am_thankful">I am thankful:</string>
     <string name="countdown_timer">Countdown Timer</string>
+    <string name="sometimes">Sometimes with the fast pace of life, we forget how much God works in our lives and the things He has done to help us.</string>
+    <string name="the_prayer_jar_was_created">The prayer jar was created as a way for you to save your prayers.</string>
+    <string name="later_you_will">Later you will be able to read the prayers you saved and reflect on how God has worked in your life. </string>
+    <string name="each_day_you">Each day you are given the opportunity to save.</string>
+    <string name="you_can_set">You can set an alert to remind you to add to the jar</string>
+    <string name="what_time_would">What time would you like to set the notification?</string>
+    <string name="once_you_save">Once you save your prayer, you cannot go back and change it, or even view it. \n\nIf you put it in the jar, it stays in the jar.</string>
+    <string name="you_will_be_able">You will be able to open the jar when a year has passed</string>
+    <string name="set_up_complete">Set up is complete!</string>
 
     <color name="blue">#0099CC</color>
 
@@ -63,5 +71,13 @@
     </string-array>
 
     <string name="title_activity_prayer">PrayerActivity</string>
+    <string name="title_activity_start_screen">StartScreen</string>
+    <string name="title_activity_sreen_one">SreenOne</string>
+    <string name="title_activity_screen_two">ScreenTwo</string>
+    <string name="title_activity_screen_three">ScreenThree</string>
+    <string name="title_activity_screen_four">ScreenFour</string>
+    <string name="title_activity_screen_five">ScreenFive</string>
+    <string name="title_activity_screen_six">ScreenSix</string>
+    <string name="title_activity_main_screen_v2">MainScreenV2</string>
 
 </resources>

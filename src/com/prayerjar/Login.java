@@ -23,7 +23,7 @@ public class Login extends Activity {
 	
 	static boolean isKill=false;
 	Button btnContinue;
-	Button btnHelp;
+//	Button btnHelp;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,31 +41,32 @@ public class Login extends Activity {
 		btnContinue.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
             	
-            	startActivity(new Intent(Login.this, MainActivity.class));
+            	startActivity(new Intent(Login.this, MainScreenV2.class));
+            	overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
             	
             	
 			
             }
         });
 		
-		btnHelp = (Button)findViewById(R.id.btnHelp);
-		btnHelp.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View v) {
- 
-//            	
-            	AlertDialog alertDialog = new AlertDialog.Builder(Login.this).create();
-            	alertDialog.setTitle("Help");
-            	alertDialog.setMessage("Prayer Jar enables you to create and manage your prayer list. To begin, continue to the home screen and click 'Compose', or visit the online tutorial at www.xyz.com");
-            	alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
-            	    public void onClick(DialogInterface dialog, int id) {
-            	         
-            	    }
-            	});
-            	alertDialog.show();
-
-            }
-        });
-		
+//		btnHelp = (Button)findViewById(R.id.btnHelp);
+//		btnHelp.setOnClickListener(new Button.OnClickListener() {
+//            public void onClick(View v) {
+// 
+////            	
+//            	AlertDialog alertDialog = new AlertDialog.Builder(Login.this).create();
+//            	alertDialog.setTitle("Help");
+//            	alertDialog.setMessage("Prayer Jar enables you to create and manage your prayer list. To begin, continue to the home screen and click 'Compose', or visit the online tutorial at www.xyz.com");
+//            	alertDialog.setButton(DialogInterface.BUTTON_POSITIVE, "OK", new DialogInterface.OnClickListener() {
+//            	    public void onClick(DialogInterface dialog, int id) {
+//            	         
+//            	    }
+//            	});
+//            	alertDialog.show();
+//
+//            }
+//        });
+//		
 			
 	}
 	}
@@ -80,7 +81,7 @@ public class Login extends Activity {
 	public void onBackPressed() {
 		super.onBackPressed();
 		super.finish();
-		Toast.makeText(getApplicationContext(), "Application Closed", Toast.LENGTH_SHORT).show();
+		//Toast.makeText(getApplicationContext(), "Application Closed", Toast.LENGTH_SHORT).show();
 		isKill=true;
 //finish();
 		
