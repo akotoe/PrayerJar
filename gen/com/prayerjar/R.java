@@ -84,6 +84,7 @@ public final class R {
         public static final int quickContactBadge1=0x7f0b002f;
         public static final int quickContactBadge2=0x7f0b0037;
         public static final int radioButton2=0x7f0b0024;
+        public static final int remainingDays=0x7f0b001f;
         public static final int settings=0x7f0b0049;
         public static final int tag=0x7f0b0027;
         public static final int text=0x7f0b003f;
@@ -92,7 +93,6 @@ public final class R {
         public static final int textView10=0x7f0b0025;
         public static final int textView2=0x7f0b0010;
         public static final int textView3=0x7f0b0012;
-        public static final int textView4=0x7f0b001f;
         public static final int textView5=0x7f0b0017;
         public static final int textView7=0x7f0b0015;
         public static final int thanks=0x7f0b001e;

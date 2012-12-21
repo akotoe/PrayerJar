@@ -142,12 +142,12 @@
             android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/remainingDays"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:text="325 days left"
+                android:text="365 days left"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#414141" />
 

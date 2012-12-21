@@ -1,5 +1,7 @@
 package com.prayerjar;
 
+
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
 
 public class ScreenSix extends Activity {
 
@@ -33,5 +36,7 @@ public class ScreenSix extends Activity {
 		getMenuInflater().inflate(R.menu.activity_screen_six, menu);
 		return true;
 	}
+	
+	
 
 }
