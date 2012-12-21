@@ -57,7 +57,8 @@ public class MainActivity extends Activity{
 		    public void onClick(View v) {
 		        // TODO Auto-generated method stub
 		       
-		        	startActivity(new Intent(MainActivity.this, AddActivity.class));
+		        	startActivity(new Intent(MainActivity.this, MainScreenV2.class));
+		        	overridePendingTransition(R.anim.animation_enter, R.anim.animation_leave);
 		       
 		    }
 		});

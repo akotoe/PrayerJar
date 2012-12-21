@@ -28,7 +28,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:text="@string/app_name"
-            android:textSize="25dip"
+            android:textSize="25sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
@@ -69,18 +69,18 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prayer Requests"
-             android:textColor="#414141" 
+            android:text="@string/prayer_requests"
+            android:textColor="#414141" 
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/prayer"
+            android:id="@+id/txtPrayerRequest"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_marginTop="10dp"
             android:ems="10"
             android:gravity="top"
-            android:hint="Type prayer here"
+            android:hint="@string/type_prayer_here"
             android:inputType="textMultiLine|textCapSentences"
             android:minHeight="250dp"
             android:paddingBottom="50dp">
@@ -101,21 +101,21 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/btnThanksSave"
+            android:id="@+id/vwThanks"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Answered Prayers"
-             android:textColor="#414141" 
+            android:text="@string/answered_prayers"
+            android:textColor="#414141" 
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/thanks"
+            android:id="@+id/txtPrayerThanks"
             android:layout_width="match_parent"
             android:layout_height="84dp"
             android:layout_marginTop="10dp"
             android:ems="10"
             android:gravity="top"
-            android:hint="Type prayer here"
+            android:hint="@string/type_prayer_here"
             android:inputType="textMultiLine|textCapSentences"
             android:minHeight="250dp"
             android:paddingBottom="50dp" >
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content" >
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnThanksSaved"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:text="365 days left"
+                android:text="@string/remaining_days"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#414141" />
 
@@ -166,14 +166,14 @@
         android:background="@drawable/straight_edges" >
 
         <TextView
-            android:id="@+id/vwCompose"
+            android:id="@+id/vwSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="28dp"
-            android:text="Settings"
-            android:textSize="17dp"
+            android:text="@string/settings"
+            android:textSize="17sp"
             android:textStyle="normal" />
 
         <View
@@ -188,24 +188,23 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/vwCompose"
-            android:layout_alignBottom="@+id/vwCompose"
+           
             android:layout_alignParentRight="true"
             android:layout_marginRight="23dp"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="normal" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/jar"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/textView1"
-            android:layout_alignBottom="@+id/textView1"
-            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/textView1"
-            android:text="Jar"
-            android:textSize="17dp"
+            android:text="@string/jar"
+            android:textSize="17sp"
             android:textStyle="normal" />
+
     </RelativeLayout>
 
     

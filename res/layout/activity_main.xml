@@ -4,15 +4,15 @@
 	android:orientation="vertical">
 	
 	<ListView
-        android:id="@+id/list"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:divider="#b5b5b5"
-        android:dividerHeight="0.5dp"
-        android:layout_alignParentLeft="true"
-	    android:layout_alignParentBottom="true"
+	    android:id="@+id/list"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/bottom_control_view"
+	    android:layout_alignParentLeft="true"
 	    android:layout_below="@+id/headerDividerBottom"
-        android:listSelector="@drawable/list_selector" />
+	    android:divider="#b5b5b5"
+	    android:dividerHeight="0.5dp"
+	    android:listSelector="@drawable/list_selector" />
 
 	<RelativeLayout
 	    android:id="@+id/top_control_view"

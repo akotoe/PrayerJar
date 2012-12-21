@@ -1,114 +1,91 @@
-  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
-    android:layout_width="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rounded_edges">
+<ScrollView 
+    android:layout_width="fill_parent"
     android:background="@drawable/rounded_edges"
-    android:layout_height="fill_parent">  
+    android:layout_height="wrap_content" >
+    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="250dp"
+    android:background="@drawable/rounded_edges"
+    tools:context=".ScreenFour" >
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_edges"
-        android:orientation="vertical"
-        tools:context=".ScreenFrour" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+       	android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:text="@string/you_can_set" />
 
-      <LinearLayout
-          android:id="@+id/linearLayout2"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content" >
-          
-          <TextView
-          android:id="@+id/textView2"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-           android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-             android:layout_marginTop="24dp"
-          android:text="@string/you_can_set"
-          android:textAppearance="?android:attr/textAppearanceLarge" />
-      </LinearLayout>
-      
-      <RelativeLayout
-          android:id="@+id/linearLayout1"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content" 
-          android:layout_marginTop="10dp"
-          >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="@string/alert"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-          <TextView
-              android:id="@+id/textView1"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_alignParentLeft="true"
-              android:layout_centerVertical="true"
-              android:layout_marginLeft="24dp"
-              android:text="@string/alert"
-              android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/textView1"/>
 
-          <ToggleButton
-              android:id="@+id/toggleButton1"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_alignParentTop="true"
-              android:layout_marginLeft="22dp"
-              android:layout_toRightOf="@+id/textView1" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/toggleButton1"
+        android:layout_marginTop="24dp"
+         android:layout_marginBottom="5dp"
+        android:text="@string/what_time_would"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-      </RelativeLayout>
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3" />
 
-      <LinearLayout
-          android:id="@+id/linearLayout3"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content" >
-          
-          
-          <TextView
-          android:id="@+id/textNotification"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="24dp"
-          android:layout_marginRight="24dp"
-          android:layout_marginTop="10dp"
-            
-     
-          android:text="@string/what_time_would"
-          android:textAppearance="?android:attr/textAppearanceLarge" />
-      </LinearLayout>
-      
-      
+   
 
-      <LinearLayout
-          android:id="@+id/linearLayout4"
-          android:layout_width="fill_parent"
-          android:layout_height="fill_parent"
-          android:layout_marginTop="15dp"
-          >
+</RelativeLayout>
 
-          <TimePicker
-              android:id="@+id/timePicker1"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content" 
-              android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-              />
-      </LinearLayout>
+</ScrollView>
 
-      <RelativeLayout
-          android:id="@+id/linearLayout5"
-          android:layout_width="fill_parent"
-          android:layout_height="fill_parent"
-          android:layout_marginBottom="30dp"
-          android:layout_marginTop="30dp" >
+<RelativeLayout
+    android:id="@+id/bottom_control_view"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true" >
 
-          <TextView
-              android:id="@+id/vwNext"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_alignParentBottom="true"
-              android:layout_alignParentRight="true"
-              android:layout_marginRight="28dp"
-              android:text="@string/next"
-              android:textAppearance="?android:attr/textAppearanceMedium" />
-      </RelativeLayout>
+     <TextView
+         android:id="@+id/vwNext"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="34dp"
+         android:text="@string/next"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-  </LinearLayout>
-  </ScrollView>
+	</RelativeLayout>
+</RelativeLayout>
+

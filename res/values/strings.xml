@@ -47,11 +47,18 @@
     <string name="the_prayer_jar_was_created">The prayer jar was created as a way for you to save your prayers.</string>
     <string name="later_you_will">Later you will be able to read the prayers you saved and reflect on how God has worked in your life. </string>
     <string name="each_day_you">Each day you are given the opportunity to save.</string>
-    <string name="you_can_set">You can set an alert to remind you to add to the jar</string>
+    <string name="you_can_set">You can set an alert to remind you to add to the jar.</string>
     <string name="what_time_would">What time would you like to set the notification?</string>
     <string name="once_you_save">Once you save your prayer, you cannot go back and change it, or even view it. \n\nIf you put it in the jar, it stays in the jar.</string>
     <string name="you_will_be_able">You will be able to open the jar when a year has passed</string>
     <string name="set_up_complete">Set up is complete!</string>
+    <string name ="jar">Jar</string>
+    <string name ="settings">Settings</string>
+    <string name ="type_prayer_here">Type prayer here</string>
+    <string name ="answered_prayers">Answered Prayers</string>
+    <string name ="prayer_requests">Prayer requests</string>
+    <string name ="remaining_days">0</string>
+    
 
     <color name="blue">#0099CC</color>
 
